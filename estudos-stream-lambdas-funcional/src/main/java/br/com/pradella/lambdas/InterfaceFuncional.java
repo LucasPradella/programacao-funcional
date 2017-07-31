@@ -57,15 +57,15 @@ public class InterfaceFuncional {
 		
 		
 		
-		ValorNum2 espressao2=(x, y) ->{
+		ValorNum2 espressao=(x, y) ->{
 			int w = x + y;
 			return w > 1000;
 		};
 		
 		
-		
-		System.out.println(espressao2.vNum(10, 10000));
-		System.out.println(espressao2.vNum(10, 10));
+		// verifica de a soma dos valores são maiores que 1000
+		System.out.println(espressao.vNum(10, 10000));
+		System.out.println(espressao.vNum(10, 10));
 		
 	}
 
