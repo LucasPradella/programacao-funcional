@@ -55,6 +55,18 @@ public class InterfaceFuncional {
 		System.out.println(isDiv.vNum(10, 2));
 		System.out.println(isDiv.vNum(10, 3));
 		
+		
+		
+		ValorNum2 espressao2=(x, y) ->{
+			int w = x + y;
+			return w > 1000;
+		};
+		
+		
+		
+		System.out.println(espressao2.vNum(10, 10000));
+		System.out.println(espressao2.vNum(10, 10));
+		
 	}
 
 	
