@@ -2,8 +2,6 @@ package br.com.pradella.lambdas;
 
 public class InterfaceFuncional {
 	
-	
-	
 	interface num{
 		double getValue();
 	}
