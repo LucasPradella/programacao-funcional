@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 
+import br.com.pradella.lambdas.Lambda1;
+
 public class Lambda1Test {
 	
 	@InjectMocks

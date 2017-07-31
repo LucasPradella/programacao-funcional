@@ -1,4 +1,4 @@
-package br.com.pradella;
+package br.com.pradella.lambdas;
 
 public class Lambda1 {
 	
