@@ -12,7 +12,19 @@ public class Stream {
 		for (String  s : lista) 
 			if (condicao.test(s)) 
 				System.out.println(s);
-		
+	}
+	
+	
+	private static void filtro2(List<String> lista, Predicate<String> condicao) {
+		/*lista.stream()
+				.filter((str)->condicao.test(str))
+				.forEach((str)->System.out.println(str));
+		*/
+		lista.stream()
+				.filter(condicao::test)
+				.forEach(System.out::println);
+
+
 	}
 	
 	
@@ -61,6 +73,12 @@ public class Stream {
 		System.out.println("Imprimir nomes com mais de 10 caracteres");
 		filtro(lista1, (s) -> s.length()>10);
 		
+		
+		
+		System.out.println("======Iteração Interna======");
+		
+		System.out.println("Imprimir nomes com mais de 10 caracteres");
+		filtro2(lista1, (s) -> s.length()>10);
 		
 	}
 
